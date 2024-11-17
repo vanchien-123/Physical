@@ -1,0 +1,97 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Login</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- All css files are included here. -->
+	<!-- Bootstrap fremwork main css -->
+	<link rel="stylesheet" type="text/css" th:href="@{/default/format/css/bootstrap.min.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/default/format/css/core.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/default/format/css/shortcode/shortcodes.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/default/format/css/style.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/default/format/css/responsive.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/default/format/css/custom.css}">
+
+
+
+	<!-- Modernizr JS -->
+	<script src="default/format/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+	<!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+	<!-- Body main wrapper start -->
+	<div class="wrapper fixed__footer">
+		<!-- Start Header Style -->
+
+		<!-- End Offset Wrapper -->
+		<!-- Start Login Register Area -->
+		<div class="htc__login__register bg__white ptb--130"
+			style="background: rgba(0, 0, 0, 0) url(images/bg/5.jpg) no-repeat scroll center center / cover ;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<ul class="login__register__menu" role="tablist">
+							<li role="presentation" class="login active"><a href="#login" role="tab"
+									data-toggle="tab">Login</a></li>
+
+						</ul>
+					</div>
+				</div>
+				<!-- Start Login Register Content -->
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="htc__login__register__wrap">
+							<!-- Start Single Content -->
+							<div id="login" role="tabpanel" class="single__tabs__panel tab-pane fade in active">
+								<form class="login" th:action="@{/checkin}" method="post">
+									<input type="text" class="form-control" placeholder="Tài khoản đăng nhập"
+										name="username">
+									<input type="password" class="form-control" placeholder="Mật khẩu" name="password">
+									<button type="submit" class="btn btn-primary">Đăng Nhập</button>
+								</form>
+							</div>
+							<p class="text-left">Bạn chưa có tài khoản?<a th:href="@{/register}"> Đăng ký tài khoản
+									mới</a>
+								<!-- End Single Content -->
+								<!-- Start Single Content -->
+
+								<!-- End Single Content -->
+						</div>
+					</div>
+				</div>
+				<!-- End Login Register Content -->
+			</div>
+		</div>
+		<!-- End Login Register Area -->
+		<!-- Start Footer Area -->
+
+		<!-- End Footer Area -->
+	</div>
+	<!-- Body main wrapper end -->
+	<!-- Placed js at the end of the document so the pages load faster -->
+
+	<!-- jquery latest version -->
+	<script src="default/format/js/vendor/jquery-1.12.0.min.js"></script>
+	<!-- Bootstrap framework js -->
+	<script src="default/format/js/bootstrap.min.js"></script>
+	<!-- All js plugins included in this file. -->
+	<script src="default/format/js/plugins.js"></script>
+	<script src="default/format/js/slick.min.js"></script>
+	<script src="default/format/js/owl.carousel.min.js"></script>
+	<!-- Waypoints.min.js. -->
+	<script src="default/format/js/waypoints.min.js"></script>
+	<!-- Main js file that contents all jQuery plugins activation. -->
+	<script src="default/format/js/main.js"></script>
+
+</body>
+
+</html>
